@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-// import Xiaojiejie from "./Xiaojiejie";
-import Boss from './Boss'
+import Help from '@views/help'
 class App extends Component {
-  
- 
   render() {
-
-    return <Boss />;
+    return(
+      <Help />
+    ) 
   }
 }
 export default App;

@@ -61,7 +61,7 @@ const stylusModuleRegex = /\.module\.styl$/;
 module.exports = function(webpackEnv) {
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
-
+  
   // Variable used for enabling profiling in Production
   // passed into alias object. Uses a flag if passed into the build command
   const isEnvProductionProfile =
@@ -307,6 +307,14 @@ module.exports = function(webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        '@': path.resolve(__dirname,'../src'),
+        '@views':path.resolve(__dirname,'../src/views'),
+        '@models':path.resolve(__dirname,'../src/models'),
+        '@css':path.resolve(__dirname,'../src/css'),
+        '@controllers':path.resolve(__dirname,'../src/controllers'),
+        '@api':path.resolve(__dirname,'../src/api'),
+
+
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
