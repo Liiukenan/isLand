@@ -313,6 +313,10 @@ module.exports = function(webpackEnv) {
         '@css':path.resolve(__dirname,'../src/css'),
         '@controllers':path.resolve(__dirname,'../src/controllers'),
         '@api':path.resolve(__dirname,'../src/api'),
+        '@images':path.resolve(__dirname,'../src/images'),
+        '@router':path.resolve(__dirname,'../src/router'),
+        '@components':path.resolve(__dirname,'../src/components'),
+        '@data':path.resolve(__dirname,'../src/data'),
 
 
       },
@@ -325,7 +329,7 @@ module.exports = function(webpackEnv) {
         // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
         // please link the files into your node_modules/ and let module-resolution kick in.
         // Make sure your source files are compiled, as they will not be processed in any way.
-        new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+        
       ],
     },
     resolveLoader: {

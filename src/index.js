@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App.js'
 import 'reset-css'
-
+import '@css/reset.styl'
 import 'lib-flexible'
-ReactDOM.render(<App />,document.getElementById("root"))
+import initReactFastclick from 'react-fastclick';
+import Router from './router';
+initReactFastclick()
+ReactDOM.render(<Router/>,document.getElementById("root"))
