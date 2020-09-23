@@ -1,13 +1,8 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Header from '@components/Header'
 import '@css/privacyClause.styl'
 import {data} from '@data/agreementData';
-class PrivacyAgreement extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
-    render() {
+ function PrivacyAgreement() {
         return (
             <div className="privacy-clause">
                 <Header titleSrc={require("../images/ic_clause.png")}/>
@@ -34,5 +29,4 @@ class PrivacyAgreement extends Component {
             </div>
         );
     }
-}
 export default PrivacyAgreement;

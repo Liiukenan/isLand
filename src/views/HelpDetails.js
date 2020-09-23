@@ -1,35 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "@components/Header";
 import "@css/helpList.styl";
 import { data } from "@data/helpData";
-class HelpDetails extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-  render() {
+function HelpDetails(props) {
     return (
       <div className="help-details">
         <Header
-          titleSrc={require(`../images/ic_title_${this.props.match.params.id}.png`)}
+          titleSrc={require(`../images/ic_title_${props.match.params.id}.png`)}
         />
         
         <div className="list">
           <div className="mt-14 pl-10 pr-10 fs-15">
-            <div className="content pl-14 pr-14 pt-14 pb-14">{this.state.id}
+            <div className="content pl-14 pr-14 pt-14 pb-14">
               <div>
                 {
-                  data[this.props.match.params.id].content[
-                    this.props.match.params.number
+                  data[props.match.params.id].content[
+                    props.match.params.number
                   ].question
                 }
               </div>
-              <div className="mt-10">您好！</div>
+              <div className="mt-10 fc-blue">您好！</div>
               <div className="fc-blue fs-14 answer mt-4">
                 {
-                  data[this.props.match.params.id].content[
-                    this.props.match.params.number
+                  data[props.match.params.id].content[
+                    props.match.params.number
                   ].answer
                 }
               </div>
@@ -39,5 +33,4 @@ class HelpDetails extends Component {
       </div>
     );
   }
-}
 export default HelpDetails;

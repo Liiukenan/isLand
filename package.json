@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -148,5 +149,7 @@
     "query-string": "^6.13.2",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2"
-  }
+  },
+  "homepage": "."
+  
 }
