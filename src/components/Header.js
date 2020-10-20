@@ -1,29 +1,50 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '@css/header.styl'
-import {withRouter} from 'react-router-dom'
-class Header extends Component {
-    constructor(props) {           
-       super(props);
-       this.state = {}
-       this.goBack=this.goBack.bind(this)
-    }
-    goBack(){
-        if(this.props.match.params.id){
-            this.props.history.goBack()
+import {jsCallNative} from '../common/base'
+function Header(props) {
+    const goBack=()=>{
+        let str=["/termsService","/serviceCharge","/privacyAgreement","/help"];
+        let locationData=props.historyData;
+        if(str.includes(locationData.match.path)){
+            jsCallNative("backPage");
             return;
         }
-        console.log(1342);
-        
+        let path=locationData.match.params;
+        switch (locationData.match.path) {
+            case "/helpList/:id":
+                locationData.history.push('/help');
+                break;
+            case "/helpDetails/:id/:number":
+                locationData.history.push('/helpList/'+path.id);
+                break;
+            case "/helpHotDetails/:id/:number":
+                locationData.history.push('/help');
+                break;
+            default:
+                break;
+        }
+        if(locationData.match.path==="/serviceChargeInfo/:source"){
+            if(locationData.match.params.source!=="0"){
+                locationData.history.push('/serviceCharge');
+            }else{
+                jsCallNative("backPage");
+            }
+        }
+
     }
-    render() {
-        return (
-             <div className="header">
-                <img src={this.props.titleSrc} alt="" className="title-img"/>
+     return (
+          <div className="header" id="header">
+                <img src={props.titleSrc} alt="" className="title-img"/>
                 <div className="back">
-                    <img src={require("../images/ic_activity_return.png")} alt="" onClick={this.goBack}/>
+                    <button onClick={goBack}>
+                        <img src={require("../images/ic_activity_return.png")} alt="" />
+                    </button>
+                    
                 </div>
             </div>
-        )
-    }
+      );
 }
-export default withRouter(Header);
+export default Header
+
+
+

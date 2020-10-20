@@ -1,20 +1,25 @@
 import React from 'react';
-import {HashRouter, Route, Switch} from 'react-router-dom';
-import App from '@/App';
+import {HashRouter, Route, Switch,Redirect} from 'react-router-dom';
 import HelpList from '@views/HelpList';
+import HelpHotDetails from '@views/HelpHotDetails';
 import PrivacyAgreement from '@views/PrivacyAgreement';
 import TermsService from '@views/TermsService';
 import Help from '@views/Help';
 import HelpDetails from '@views/HelpDetails';
+import ServiceCharge from '@views/ServiceCharge';
+import ServiceChargeInfo from '@views/ServiceChargeInfo';
 const BasicRoute = () => (
     <HashRouter>
         <Switch>
-            <Route exact path="/" component={App}/>
-            <Route exact path="/help" component={Help}/>
-            <Route exact path="/helpList/:id" component={HelpList}/>
-            <Route exact path="/privacyAgreement" component={PrivacyAgreement}/>
-            <Route exact path="/termsService" component={TermsService}/>
-            <Route exact path="/helpDetails/:id/:number" component={HelpDetails}/>
+            <Route  path="/help" component={Help}/>
+            <Route  path="/helpList/:id" component={HelpList}/>
+            <Route  path="/helpHotDetails/:id/:number" component={HelpHotDetails}/>
+            <Route  path="/privacyAgreement" component={PrivacyAgreement}/>
+            <Route  path="/termsService" component={TermsService}/>
+            <Route  path="/helpDetails/:id/:number" component={HelpDetails}/>
+            <Route  path="/serviceCharge" component={ServiceCharge}/>
+            <Route  path="/serviceChargeInfo/:source" component={ServiceChargeInfo}/>
+            <Redirect to="/help"/> 
         </Switch>
     </HashRouter>
 );

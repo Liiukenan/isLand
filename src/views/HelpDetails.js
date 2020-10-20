@@ -2,11 +2,12 @@ import React from "react";
 import Header from "@components/Header";
 import "@css/helpList.styl";
 import { data } from "@data/helpData";
+import { withRouter } from "react-router-dom";
 function HelpDetails(props) {
     return (
       <div className="help-details">
         <Header
-          titleSrc={require(`../images/ic_title_${props.match.params.id}.png`)}
+          titleSrc={require(`../images/ic_title_${props.match.params.id}.png`)} historyData={props}
         />
         
         <div className="list">
@@ -33,4 +34,4 @@ function HelpDetails(props) {
       </div>
     );
   }
-export default HelpDetails;
+export default withRouter(HelpDetails);

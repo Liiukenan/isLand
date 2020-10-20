@@ -2,6 +2,26 @@
     min-height 100vh 
     background #EFFAFF
     width 100% 
+    .bossText-enter{
+        opacity: 0
+    }
+    .bossText-enter-active{
+        opacity 1
+        transition opacity 0.5s
+    }
+    .bossText-enter-done{
+        opacity 1
+    }
+    .bossText-exit{
+        opacity 1
+    }
+    .bossText-exit-active{
+        opacity 0
+        transition opacity 0.5s
+    }
+    .bossText-exit-done{
+        opacity 0
+    }
     .content {
         position absolute 
         left 0 

@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React,{useEffect} from 'react'
 import Help from '@views/Help'
-class App extends Component {
-  render() {
-    return(
-      <Help />
-    ) 
-  }
+function App(props) {
+    useEffect(() => {
+        window.serviceNumber=serviceNumber;
+    }, []);
+    const serviceNumber=(data)=>{
+      return data;
+    }
+     return (
+          <Help />
+      );
 }
-export default App;
+export default App
