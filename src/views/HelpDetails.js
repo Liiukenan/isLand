@@ -21,12 +21,12 @@ function HelpDetails(props) {
                 }
               </div>
               <div className="mt-10 fc-blue">您好！</div>
-              <div className="fc-blue fs-14 answer mt-4">
-                {
-                  data[props.match.params.id].content[
+              <div className="fc-blue fs-14 answer mt-4" dangerouslySetInnerHTML={{
+                  __html:data[props.match.params.id].content[
                     props.match.params.number
                   ].answer
-                }
+                }}>
+                
               </div>
             </div>
           </div>

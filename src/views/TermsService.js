@@ -11,7 +11,7 @@ function TermsService(props) {
                 <div className="main">
                     <div className="details pl-16 pr-16 fs-14 contents">
                         <div className="title fs-18 mt-16 flex-justify-center">
-                            《海岛大亨服务协议》
+                            《海岛大亨极速版服务协议》
                         </div>
                         <div className="mt-16">
                             {

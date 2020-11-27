@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import '@css/header.styl'
 import {jsCallNative} from '../common/base'
 function Header(props) {
@@ -30,14 +30,13 @@ function Header(props) {
                 jsCallNative("backPage");
             }
         }
-
     }
      return (
           <div className="header" id="header">
                 <img src={props.titleSrc} alt="" className="title-img"/>
                 <div className="back">
-                    <button onClick={goBack}>
-                        <img src={require("../images/ic_activity_return.png")} alt="" />
+                    <button className="btn" onClick={goBack}>
+                        
                     </button>
                     
                 </div>

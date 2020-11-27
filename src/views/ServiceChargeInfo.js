@@ -23,7 +23,6 @@ function ServiceChargeInfo(props) {
              result=num?JSON.parse(num):{gradeNumber:1,ratio:2};
           }
           
-          
     }else{
         try {
             result=JSON.parse(clientWindow.serviceNumber()); 

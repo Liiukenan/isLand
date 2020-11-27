@@ -11,7 +11,7 @@ function HelpList(props) {
                         <div className="mt-14 pl-10 pr-10">
                             {data[props.match.params.id].content.map((item,index)=>{
                                 return(
-                                <Link to={`/helpDetails/${props.match.params.id}/${index}${props.location.pathname}`} key={index} className="fs-14 mt-4 flex-items-center pl-12 pr-12">{item.question}</Link> 
+                                <Link to={`/helpDetails/${props.match.params.id}/${index}`} key={index} className="fs-14 mt-4 flex-items-center pl-12 pr-12">{item.question}</Link> 
                                 )
                             })}
                         </div>

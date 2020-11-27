@@ -8,9 +8,12 @@ import Help from '@views/Help';
 import HelpDetails from '@views/HelpDetails';
 import ServiceCharge from '@views/ServiceCharge';
 import ServiceChargeInfo from '@views/ServiceChargeInfo';
+
+// import App from "../App"
 const BasicRoute = () => (
     <HashRouter>
         <Switch>
+            {/* <Route  path="/" exact component={App}/> */}
             <Route  path="/help" component={Help}/>
             <Route  path="/helpList/:id" component={HelpList}/>
             <Route  path="/helpHotDetails/:id/:number" component={HelpHotDetails}/>

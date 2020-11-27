@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",
+    "@better-scroll/core": "^2.0.5",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,6 +20,7 @@
     "better-scroll": "^2.0.4",
     "camelcase": "^5.3.1",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "classnames": "^2.2.6",
     "css-loader": "3.4.2",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
@@ -52,6 +54,7 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-fastclick": "^3.0.2",
+    "react-feedback": "0.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.4.1",

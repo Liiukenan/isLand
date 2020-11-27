@@ -24,7 +24,7 @@ function ServiceCharge(props) {
                     <div className="main">
                          <div className="details pl-16 pr-16 fs-14 pt-18">
                               <div>
-                                   1.成功邀请1人完成两个海盗团任务即可降低5%服务费率;
+                                   1.成功邀请1人玩游戏即可降低5%服务费率；
                               </div>
                               <div className="mt-10">
                                    2.提升海盗团等级服务费比率最高可降至20%
@@ -36,7 +36,7 @@ function ServiceCharge(props) {
                                    </Link>
                               </div>
                               <div className="flex-justify-center">
-                                   <button className="inviteBtn" onClick={invite}></button>
+                                   <button className="inviteBtn btn" onClick={invite}></button>
                               </div>
                          </div>
                     </div>
