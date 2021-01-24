@@ -1,13 +1,13 @@
 import React from 'react';
 import {HashRouter, Route, Switch,Redirect} from 'react-router-dom';
-import HelpList from '@views/HelpList';
-import HelpHotDetails from '@views/HelpHotDetails';
-import PrivacyAgreement from '@views/PrivacyAgreement';
-import TermsService from '@views/TermsService';
-import Help from '@views/Help';
-import HelpDetails from '@views/HelpDetails';
-import ServiceCharge from '@views/ServiceCharge';
-import ServiceChargeInfo from '@views/ServiceChargeInfo';
+import HelpList from '../views/HelpList';
+import HelpHotDetails from '../views/HelpHotDetails';
+import PrivacyAgreement from '../views/PrivacyAgreement';
+import TermsService from '../views/TermsService';
+import Help from '../views/Help';
+import HelpDetails from '../views/HelpDetails';
+import ServiceCharge from '../views/ServiceCharge';
+import ServiceChargeInfo from '../views/ServiceChargeInfo';
 
 // import App from "../App"
 const BasicRoute = () => (

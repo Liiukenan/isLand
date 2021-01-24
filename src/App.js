@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import Help from '@views/Help'
+import Help from './views/help'
 function App(props) {
     useEffect(() => {
         window.serviceNumber=serviceNumber;
