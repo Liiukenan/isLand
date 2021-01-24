@@ -1,7 +1,7 @@
 /*global clientWindow*/
 import React, { Component } from 'react'
-import '@css/serviceChargeInfo.styl'
-import Header from '@components/Header'
+import '../css/serviceChargeInfo.styl'
+import Header from '../components/Header'
 import {jsCallNative,getPlane} from '../common/base'
 class serviceChargeInfo extends Component {
     constructor(props) {           

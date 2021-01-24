@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "@components/Header";
-import "@css/helpList.styl";
-import { data } from "@data/helpData";
+import Header from "../components/Header";
+import "../css/helpList.styl";
+import { data } from "../data/helpData";
 import { withRouter } from "react-router-dom";
 function HelpHotDetails(props) {
     return (

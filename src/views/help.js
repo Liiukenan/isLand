@@ -1,8 +1,8 @@
 import React, { useState,useEffect,useRef } from 'react'
-import '@css/help.styl'
-import Header from '@components/Header'
+import '../css/help.styl'
+import Header from '../components/Header'
 import { Link, withRouter } from 'react-router-dom'
-import { data } from '@data/helpData'
+import { data } from '../data/helpData'
 import { jsCallNative } from '../common/base'
 
 function Help(props) {

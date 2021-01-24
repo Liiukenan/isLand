@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "@components/Header";
-import "@css/privacyClause.styl";
-import "@css/common.styl";
+import Header from "../components/Header";
+import "../css/privacyClause.styl";
+import "../css/common.styl";
 function PrivacyAgreement(props) {
   return (
     <div className="privacy-clause common-box">
