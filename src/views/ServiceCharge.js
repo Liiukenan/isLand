@@ -1,7 +1,7 @@
 import React,{ useEffect,useState }  from 'react'
-import '@css/common.styl'
-import '@css/serviceCharge.styl'
-import Header from '@components/Header'
+import '../css/common.styl'
+import '../css/serviceCharge.styl'
+import Header from '../components/Header'
 import {Link} from 'react-router-dom'
 import {jsCallNative} from '../common/base'
 import { withRouter } from "react-router-dom"

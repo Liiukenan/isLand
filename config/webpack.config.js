@@ -308,7 +308,6 @@ module.exports = function(webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         '@': path.resolve(__dirname,'../src'),
-        '@views':path.resolve(__dirname,'../src/views'),
         '@models':path.resolve(__dirname,'../src/models'),
         '@css':path.resolve(__dirname,'../src/css'),
         '@controllers':path.resolve(__dirname,'../src/controllers'),

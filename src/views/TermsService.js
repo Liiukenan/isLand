@@ -1,8 +1,8 @@
 import React  from 'react'
-import Header from '@components/Header'
-import '@css/common.styl'
-import '@css/privacyClause.styl'
-import {data} from '@data/termData'
+import Header from '../components/Header'
+import '../css/common.styl'
+import '../css/privacyClause.styl'
+import {data} from '../data/termData'
 function TermsService(props) {
     return (
         <div className="privacy-clause common-box">

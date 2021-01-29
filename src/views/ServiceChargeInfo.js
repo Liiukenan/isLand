@@ -1,7 +1,7 @@
 /*global clientWindow window*/
 import React ,{ useEffect,useState } from 'react'
-import '@css/serviceChargeInfo.styl'
-import Header from '@components/Header'
+import '../css/serviceChargeInfo.styl'
+import Header from '../components/Header'
 import {jsCallNative,getPlane} from '../common/base'
 import { withRouter } from "react-router-dom";
 function ServiceChargeInfo(props) {

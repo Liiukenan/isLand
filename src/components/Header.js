@@ -1,5 +1,5 @@
 import React  from 'react'
-import '@css/header.styl'
+import '../css/header.styl'
 import {jsCallNative} from '../common/base'
 function Header(props) {
     const goBack=()=>{
