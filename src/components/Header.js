@@ -31,9 +31,31 @@ function Header(props) {
             }
         }
     }
+    const Title=()=>{
+      
+        if(props.historyData.location.pathname==='/termsService'){
+            return(
+                <span className="title-font">Terms of Use</span>
+                
+            )
+        }
+        if(props.historyData.location.pathname==='/privacyAgreement'){
+             return(
+                    <span className="title-font">Privacy Policy</span>
+                )
+        }
+        return(
+
+            <img src={props.titleSrc} alt="" className="title-img"/>
+        )
+        
+    }
+
      return (
+          
           <div className="header" id="header">
-                <img src={props.titleSrc} alt="" className="title-img"/>
+
+                <Title />
                 <div className="back">
                     <button className="btn" onClick={goBack}>
                         

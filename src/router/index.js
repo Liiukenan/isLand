@@ -14,6 +14,7 @@ const BasicRoute = () => (
     <HashRouter>
         <Switch>
             {/* <Route  path="/" exact component={App}/> */}
+            
             <Route  path="/help" component={Help}/>
             <Route  path="/helpList/:id" component={HelpList}/>
             <Route  path="/helpHotDetails/:id/:number" component={HelpHotDetails}/>

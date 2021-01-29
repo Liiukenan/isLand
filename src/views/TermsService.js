@@ -11,14 +11,14 @@ function TermsService(props) {
                 <div className="main">
                     <div className="details pl-16 pr-16 fs-14 contents">
                         <div className="title fs-18 mt-16 flex-justify-center">
-                            《海岛大亨极速版服务协议》
+                        Idle Island Builder – Terms of Use
                         </div>
                         <div className="mt-16">
                             {
                                 data.map((item, index) => {
                                     return (
-                                        <div key={index}>
-                                            {item}
+                                        <div key={index} dangerouslySetInnerHTML = {{ __html:`${item}` }} className="article">
+                                     
                                         </div>
                                     )
                                 })
