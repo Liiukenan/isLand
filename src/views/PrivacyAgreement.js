@@ -23,7 +23,6 @@ function PrivacyAgreement(props) {
                             {data.map((item,index)=>{
                                 return(
                                   <div key={index} dangerouslySetInnerHTML = {{ __html:`${item}` }} className="article">
-                                     
                                     </div>
                                 )
                             })}
